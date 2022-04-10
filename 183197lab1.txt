@@ -135,5 +135,3 @@ git merge branch1
 ne se javuva problem
 
 no za merge so branch2 imame conflict
-
-

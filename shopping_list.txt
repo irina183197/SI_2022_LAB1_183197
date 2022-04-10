@@ -1,5 +1,5 @@
 gin x1
-vodka x2
+vodka x6
 jajca x3
 brasno x4
 leb x5

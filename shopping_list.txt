@@ -1,7 +1,7 @@
 gin x1
 vodka x6
 jajca x3
-<<<<<<< HEAD
+
 brasno x4
 leb x20
 
@@ -9,4 +9,4 @@ leb x20
 mleko x9
 leb x5
 voda
->>>>>>> branch2
+

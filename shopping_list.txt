@@ -1,6 +1,6 @@
 gin x1
 vodka x2
 jajca x3
-mleko x4
+mleko x9
 leb x5
-sok
+voda

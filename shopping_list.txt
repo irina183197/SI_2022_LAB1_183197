@@ -1,6 +1,6 @@
-gin
-vodka
-jajca
-brasno
-leb
+gin x1
+vodka x2
+jajca x3
+brasno x4
+leb x5
 

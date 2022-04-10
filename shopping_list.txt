@@ -1,0 +1,6 @@
+gin
+vodka
+jajca
+brasno
+leb
+

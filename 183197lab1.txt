@@ -1,0 +1,139 @@
+GIT command logs:
+
+git clone https://github.com/irina183197/SI_2022_LAB1_183197.git
+
+$ cd SI_2022_LAB1_183197
+
+$ nano shopping_list.txt
+
+$ git add shopping_list.txt
+warning: LF will be replaced by CRLF in shopping_list.txt.
+The file will have its original line endings in your working directory
+
+$ git commit -m "Add 5 items to the shopping_list.txt"
+[main 2bba247] Add 5 items to the shopping_list.txt
+ 1 file changed, 6 insertions(+)
+
+$ nano shopping_list.txt
+ 
+$ git commit -a -m "Add quantities to the items"
+warning: LF will be replaced by CRLF in shopping_list.txt.
+The file will have its original line endings in your working directory
+[main 1a3c7cc] Add quantities to the items
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+$ git checkout -b branch1
+Switched to a new branch 'branch1'
+
+$ git checkout -b branch2
+Switched to a new branch 'branch2'
+
+$ git push --set-upstream origin branch2
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 645 bytes | 645.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/irina183197/SI_2022_LAB1_183197/pull/new/branch2
+remote:
+To https://github.com/irina183197/SI_2022_LAB1_183197.git
+ * [new branch]      branch2 -> branch2
+branch 'branch2' set up to track 'origin/branch2'.
+
+
+
+
+$ git checkout branch1
+Switched to branch 'branch1'
+
+$ git push --set-upstream origin branch1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/irina183197/SI_2022_LAB1_183197/pull/new/branch1
+remote:
+To https://github.com/irina183197/SI_2022_LAB1_183197.git
+ * [new branch]      branch1 -> branch1
+branch 'branch1' set up to track 'origin/branch1'.
+
+
+
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+
+$ git push --set-upstream origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/irina183197/SI_2022_LAB1_183197.git
+   88ff641..1a3c7cc  main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+git checkout branch1
+Switched to branch 'branch1'
+Your branch is up to date with 'origin/branch1'.
+
+
+$ nano shopping_list.txt
+
+$ git commit -a -m "Change quantity of item #5"
+warning: LF will be replaced by CRLF in shopping_list.txt.
+The file will have its original line endings in your working directory
+[branch1 b900465] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+
+
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+
+
+$ nano shopping_list.txt
+
+
+$ git commit -a -m "Change quantity of item #2"
+[main cfaa07e] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/irina183197/SI_2022_LAB1_183197.git
+   1a3c7cc..cfaa07e  main -> main
+
+
+$ git checkout branch2
+Switched to branch 'branch2'
+
+
+$ nano shopping_list.txt
+
+$ git commit -a -m "Modify item #4"
+[branch2 a0efd6d] Modify item #4
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+
+$ git commit -a -m "Modify item #4 and add item #6"
+[branch2 01523ab] Modify item #4 and add item #6
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+git checkout main
+git merge branch1
+ne se javuva problem
+
+no za merge so branch2 imame conflict
+
+
